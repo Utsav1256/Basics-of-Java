@@ -1,12 +1,16 @@
 package getting_started_with_java;
 
+import java.util.Scanner;
+
 public class SimpleInterestCalculator {
 
 	public static void main(String[] args) {
 		
-		int principle = 1000;
-		int rate = 5;
-		int time = 2;
+		Scanner scan = new Scanner(System.in);
+		
+		int principle = scan.nextInt();
+		int rate = scan.nextInt();
+		int time = scan.nextInt();
 		int simpleInterest = (principle * rate * time)/100;
 		
 		System.out.println(simpleInterest);
