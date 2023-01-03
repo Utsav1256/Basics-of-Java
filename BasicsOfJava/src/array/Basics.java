@@ -42,6 +42,14 @@ public class Basics {
 		dArray[4] = 5.5;
 		System.out.println(dArray[4]);
 		
+		boolean bArray[] = new boolean[s];
+		bArray[3] = true;
+		bArray[5] = false;
+		System.out.println(bArray[3]);
+		System.out.println(bArray[4]); // default value is false (for boolean)
+		System.out.println(bArray[5]);
+		
+		
 	}
 
 }
