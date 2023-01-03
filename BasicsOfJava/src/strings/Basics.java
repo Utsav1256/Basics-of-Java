@@ -1,10 +1,16 @@
 package strings;
-
+import java.util.Scanner;
 public class Basics {
 
 	public static void printChar(String s) {
 		for(int i = 0; i < s.length(); i++) {//length -1 => i < s.length()
 			System.out.println(s.charAt(i));
+		}
+	}
+	
+	public static void printPrefixes(String s) {
+		for(int i = 0; i < s.length(); i++) {
+			System.out.println(s.substring(0, i+1));
 		}
 	}
 	
@@ -30,6 +36,8 @@ public class Basics {
 		//	Function to find subString : substring(beginIndex, endIndex)
 			System.out.println(str.substring(1, 6)); //it does not include the character at endIndex :)
 			System.out.println(str.substring(0, 1));
+			System.out.println(str.substring(0, 6));
+			System.out.println("hii" + str.substring(0, 7)); // ;)
 			
 			//	subSequence(beginIndex)
 			System.out.println(str.substring(3));
@@ -113,6 +121,17 @@ public class Basics {
 			}else {
 				System.out.println("unequal");
 			}
+			
+			
+//Q: You are given a String, you need to print all the prefixes of that String.
+//			line in case of "abcde", prefixes are a, ab, abc, abcd, abcde .
+			
+			Scanner scan = new Scanner(System.in);
+			
+			String s = scan.next();
+			System.out.println(s);
+			
+			printPrefixes(s);
 			
 			
 	}
