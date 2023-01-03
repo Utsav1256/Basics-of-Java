@@ -18,7 +18,12 @@ public class Basics {
 		chArray[6] = '!';
 		System.out.println(chArray[6]);
 		
-		
+		double dArray[] = new double[n];
+		dArray[1] = 5.5;
+		System.out.println(dArray[1]);
+		System.out.println(dArray[7]);// default value is 0.0 (for decimal)
+		dArray[7] = 6;
+		System.out.println(dArray[7]);
 	}
 
 }
