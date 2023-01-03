@@ -69,8 +69,50 @@ public class Basics {
 			System.out.println(str.concat("jkl")); // this fn. returns new String after concatenation, does not do any changes on the string on which it is applied :)
 			System.out.println(str);
 			
+//			Comparing two Arrays :
+				int arr1[] = {1, 2, 3};
+				int arr2[] = {1, 2, 3};
+				
+				if(arr1 == arr2) { // it is comparing addresses
+					System.out.println("equal");
+				}
+				else {
+					System.out.println("unequal");
+				}
+				// in case of Non-primitives '==' compares references 
+				System.out.println(arr1);
+				System.out.println(arr2);
 			
 			
+//			Let's compare in case of Strings :
+				String str1 = "abc";
+				String str2 = "abc";
+				
+				if(str1 == str2) {
+					System.out.println("equal");
+				}else {
+					System.out.println("unequal");
+				}
+				// Here, both the variables are referring to the same String [concept of String pool] :)
+				
+//			In the case of Non-primitives, if you want to compare content,
+//				then we can use the fn. str1.equals(str2)
+			System.out.println(arr1.equals(arr2));
+			System.out.println(str1.equals(str2));
+			
+			if(arr1.equals(arr2)) { // it is comparing addresses
+				System.out.println("equal");
+			}
+			else {
+				System.out.println("unequal");
+			}// why this is giving unequal???
+			
+			
+			if(str1.equals(str2)) {
+				System.out.println("equal");
+			}else {
+				System.out.println("unequal");
+			}
 			
 			
 	}
