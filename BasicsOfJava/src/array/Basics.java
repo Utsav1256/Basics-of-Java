@@ -50,6 +50,7 @@ public class Basics {
 		System.out.println(bArray[5]);
 		
 		
+		
 	}
 
 }
