@@ -1,9 +1,9 @@
 package array;
-
+import java.util.Scanner;
 public class Basics {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		int n = 12;
 		int arr[] = new int[n];
 		arr[1] = 15;
@@ -24,6 +24,24 @@ public class Basics {
 		System.out.println(dArray[7]);// default value is 0.0 (for decimal)
 		dArray[7] = 6;
 		System.out.println(dArray[7]);
+		
+		// taking input of the array from user
+		Scanner scan = new Scanner(System.in);
+		
+		int s = scan.nextInt();
+		
+		int arr1[] = new int[s];
+		arr1[s-1] = 5;
+		System.out.println(arr1[s-1] + " is at position " + ((s-1)+1));
+		
+		char chArray1[] = new char[s];
+		chArray[0] = 'z';
+		System.out.println(chArray[0]);
+		
+		double dArray1[] = new double[s];
+		dArray[4] = 5.5;
+		System.out.println(dArray[4]);
+		
 	}
 
 }
