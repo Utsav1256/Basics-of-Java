@@ -2,6 +2,12 @@ package strings;
 
 public class Basics {
 
+	public static void printChar(String s) {
+		for(int i = 0; i < s.length(); i++) {//length -1 => i < s.length()
+			System.out.println(s.charAt(i));
+		}
+	}
+	
 	public static void main(String[] args) {
 		
 		// How we create a character
@@ -41,6 +47,9 @@ public class Basics {
 			System.out.println(str.contains("cdf")); // But cdf is not the part of the String :)
 			
 			
+		//  Q: Print all characters of the String in different lines.
+			
+			printChar(str);
 			
 			
 	}
