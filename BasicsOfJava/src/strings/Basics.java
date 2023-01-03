@@ -51,6 +51,27 @@ public class Basics {
 			
 			printChar(str);
 			
+//			How Strings are stored??
+			
+			str = "abc"; //Now, the str variable is pointing to the other String
+			System.out.println(str);
+			
+			//	Strings are immutable	[concept of String pool]
+			// s.setcharAt(1) = 'f'; thats why this is wrong :)
+			
+			
+			//	concatenate two Strings :
+			str = str + "def";
+			System.out.println(str);
+			str = "ghi" + str;
+			System.out.println(str);
+			// there is a fn. also for this : concat()
+			System.out.println(str.concat("jkl")); // this fn. returns new String after concatenation, does not do any changes on the string on which it is applied :)
+			System.out.println(str);
+			
+			
+			
+			
 			
 	}
 
