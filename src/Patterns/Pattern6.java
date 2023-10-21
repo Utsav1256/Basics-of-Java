@@ -22,7 +22,7 @@ public class Pattern6 {
 		*/
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.print("Enter number of rows for the square pattern : ");
+		System.out.print("Enter number of rows for the tringular pattern : ");
 		int N = scan.nextInt();
 
 //		for(int i = 1; i <= N; i++) {
