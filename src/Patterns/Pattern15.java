@@ -4,7 +4,10 @@ import java.util.Scanner;
 
 public class Pattern15 {
 public static void main(String[] args) {
-		
+	
+//Problem Name: Mirror Number Pattern
+//Problem Level: EASY
+//Problem Description: #### Print the following pattern for the given N number of rows. 
 
 		/*
 	 	      1 
