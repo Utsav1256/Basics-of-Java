@@ -19,18 +19,18 @@ public class StudentUse {
 		System.out.println(s2); // OOPS.Student@238e0d81  // address of the student
 		
 		s1.name = "Utsav";
-		s1.rollNo = 27;
+		s1.setRollNo(28);
 		
 		System.out.println(s1.name);
-		System.out.println(s1.rollNo);
+		System.out.println(s1.getRollNo());
 		System.out.println(s2.name);
-		System.out.println(s2.rollNo);
+		System.out.println(s2.getRollNo() ); 
+// similar to as we do scan.netInt() -> nextInt() is a function that is build under the 'Scanner' class.
+		
 //		Utsav
-//		27
+//		28
 //		null
 //		0
-
-		
 	}
 
 }
