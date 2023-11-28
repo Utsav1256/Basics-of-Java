@@ -6,31 +6,13 @@ public class StudentUse {
 		Scanner scan = new Scanner(System.in);
 //since Scanner class is not in this package thats why we have to write import
 //		within the same package we don't have to write import
-		Student s1 = new Student();
-		Student s2 = new Student();
-		//new Student() --> this will create new object for you
-//		and we get its address
-//		and we store it in s1
+		Student s1 = new Student("Utsav", 32);
+
+		s1.print();
 		
-//		Student s2 = new Student();
-//		so this line is creating two memory spaces, one where you are getting the actual student
-//		another memory space is s2 , which is actually going to store the address of the student
-		
-		System.out.println(s2); // OOPS.Student@238e0d81  // address of the student
-		
-		s1.name = "Utsav";
-		s1.setRollNo(28);
-		
-		System.out.println(s1.name);
-		System.out.println(s1.getRollNo());
-		System.out.println(s2.name);
-		System.out.println(s2.getRollNo() ); 
-// similar to as we do scan.netInt() -> nextInt() is a function that is build under the 'Scanner' class.
-		
-//		Utsav
-//		28
-//		null
-//		0
+ 
+	
+//in java whenever we make a new class, we  get a function for free, that is called constructor.
 	}
 
 }
