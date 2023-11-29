@@ -6,20 +6,13 @@ public class Student {
 	private final int rollNo; 
 //	any data member which is final, cannot be changed once it is initialized
 	
-//	default constructor
-//	public Student() {
-//		rollNo = 12;
-//	}
-	
-//	Parameterized constructor
-	
-//	public Student(String n) {
-//		name = n;
-//		
-//	}
-	public Student(String n, int rN) {
-		name = n;
-		rollNo = rN;
+
+
+	public Student(String name, int rollNo) {
+		System.out.println("this -> " + this); //this -> OOPS.Student@238e0d81 -> reference of the student
+		this.name = name;
+		this.rollNo = rollNo;
+		System.out.println("this.name -> " + this.name); //this.name -> Utsav
 	}
 //	 public void setRollNo(int rN) {
 //		 if(rN <= 0) {

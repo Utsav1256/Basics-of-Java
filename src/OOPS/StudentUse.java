@@ -9,6 +9,7 @@ public class StudentUse {
 		Student s1 = new Student("Utsav", 32);
 
 		s1.print();
+		System.out.println(s1);
 		
  
 	
