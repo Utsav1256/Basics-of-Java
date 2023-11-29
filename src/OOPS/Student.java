@@ -2,7 +2,9 @@ package OOPS;
 
 public class Student {
 	public String name;
-	private int rollNo;
+//	final data members can be initialized only, as soon as they are declared or inside constructor
+	private final int rollNo; 
+//	any data member which is final, cannot be changed once it is initialized
 	
 //	default constructor
 //	public Student() {
@@ -11,20 +13,21 @@ public class Student {
 	
 //	Parameterized constructor
 	
-	public Student(String n) {
-		name = n;
-	}
+//	public Student(String n) {
+//		name = n;
+//		
+//	}
 	public Student(String n, int rN) {
 		name = n;
 		rollNo = rN;
 	}
-	 public void setRollNo(int rN) {
-		 if(rN <= 0) {
-			 return;
-		 }
-		 rollNo = rN;
-	 }
-	 
+//	 public void setRollNo(int rN) {
+//		 if(rN <= 0) {
+//			 return;
+//		 }
+//		 rollNo = rN;
+//	 }
+//	 
 	 public int getRollNo() {
 		 return rollNo;
 	 }
