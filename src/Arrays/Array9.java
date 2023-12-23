@@ -1,4 +1,4 @@
-package Arrays;
+ package Arrays;
 
 import java.util.Scanner;
 
@@ -30,7 +30,7 @@ Problem Description: #### You have been given an empty array(ARR) and its size N
 
     Time Limit: 1sec
  ##### Sample Input 1 : 
-    1
+    1 
     6
 ##### Sample Output 1 :
     1 3 5 6 4 2
@@ -67,6 +67,27 @@ public static int[] createArray() {
 	} 
 	
 	
+public static int[] createArray2() {
+	Scanner scan = new Scanner(System.in);
+	int size = scan.nextInt();
+	int arr[] = new int[size];
+	int start = 0;
+	int end = size - 1;
+	int val = 1;
+	while(start <= end) {
+		if(val % 2 == 1) {
+			arr[start] = val;
+			val++;
+			start++;
+		}
+		else {
+			arr[end] = val;
+			val++;
+			end--;
+		}
+	}
+	return arr;
+}
 	public static void print(int index[]) {
 			for(int i = 0; i < index.length; i++) {
 				System.out.print(index[i]);
@@ -79,7 +100,8 @@ public static int[] createArray() {
 		
 		int t = scan.nextInt();
         for(int i = 1; i <= t; i++) {
-        	int arr[] = createArray();
+//        	int arr[] = createArray();
+        	int arr[] = createArray2();
         	print(arr);
         	
 		}
