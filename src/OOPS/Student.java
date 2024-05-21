@@ -6,6 +6,7 @@ public class Student {
 	private final int rollNo; 
 //	any data member which is final, cannot be changed once it is initialized
 	
+	static int numStudents;
 
 
 	public Student(String name, int rollNo) {
