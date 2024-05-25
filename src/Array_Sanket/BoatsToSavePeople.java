@@ -28,30 +28,36 @@ public class BoatsToSavePeople {
 	        int count = 0;
 
 	        while(i <= j) {
-	            if(i == j ) {
-	                count++;
+//	            if(i == j ) {
+//	                count++;
+//	                i++;
+//	                j--;
+//	            } else if(people[i] + people[j] <= limit) {
+//	                count++;
+//	                i++;
+//	                j--;
+//	            } else {
+//	                count++;
+//	                j--;
+//	            }
+	        	count++;
+	        	if(people[i] + people[j] <= limit) {
 	                i++;
-	                j--;
-	            } else if(people[i] + people[j] <= limit) {
-	                count++;
-	                i++;
-	                j--;
-	            } else {
-	                count++;
-	                j--;
-	            }
+	            } 
+	        	j--;
+	        	
 	        }
 	        return count;
 	    }
 
 	public static void main(String[] args) {
-		int[] people = {1,2};
-		int limit = 3;
+//		int[] people = {1,2};
+//		int limit = 3;
 //		int[] people = {3,2,2,1};
 //		int limit  = 3;
 		
-//		int[] people = {3,5,3,4};
-//		int limit = 5;
+		int[] people = {3,5,3,4};
+		int limit = 5;
 		
 		Arrays.sort(people);
 
