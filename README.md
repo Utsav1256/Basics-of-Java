@@ -1,1 +1,6 @@
-# Welcome to the Journey of becoming a awesome programmer using Java
+# Welcome to the Journey of becoming an awesome programmer using Java
+
+# Basics of Java
+
+## What are Identifiers??
+- 
