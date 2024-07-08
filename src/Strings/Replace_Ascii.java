@@ -19,16 +19,16 @@ public class Replace_Ascii {
 			char ch = sb.charAt(i);
 			if(i % 2 == 0) {
 				ch = (char)(ch+ 1);
-				sb.setCharAt(i, ch);
 			} else {
 				ch = (char)(ch - 1);
-				sb.setCharAt(i, ch);
 			}
+			sb.setCharAt(i, ch);
 		}
 		str = sb.toString();
 		
 		return str;
 	}
+	
 	public static void main(String[] args) {
 		String str = "cdEfG";
 		String str1 = "dd";
