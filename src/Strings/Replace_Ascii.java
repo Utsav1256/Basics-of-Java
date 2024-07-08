@@ -24,9 +24,8 @@ public class Replace_Ascii {
 			}
 			sb.setCharAt(i, ch);
 		}
-		str = sb.toString();
 		
-		return str;
+		return sb.toString();
 	}
 	
 	public static void main(String[] args) {
