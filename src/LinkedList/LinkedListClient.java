@@ -13,6 +13,14 @@ public class LinkedListClient {
 		ll.display();
 		ll.addLast(106);
 		ll.display();
+		ll.insertAt(250, 2);
+		ll.display();
+		ll.insertAt(180, 3);
+		ll.display();
+		ll.insertAt(10, 0);
+		ll.display();
+		ll.insertAt(360, 7);
+		ll.display();
 	}
 
 }

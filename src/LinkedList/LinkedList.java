@@ -46,6 +46,24 @@ public class LinkedList {
 		temp.next = newNode;
 		
 	}
+	
+	public void insertAt(int data, int index) {
+//		Linked list also follows 0 based indexing like an Array.
+		if(index == 0) {
+			addFirst(data);
+			return;
+		}
+		
+		Node temp = this.head;
+		for(int i = 0; i < index - 1; i++) {
+			temp = temp.next;
+		}
+//		Node forward = temp.next; -> no need
+		
+		Node newNode = new Node(data);
+		newNode.next = temp.next;
+		temp.next = newNode;
+	}
 }
 
 
