@@ -39,6 +39,8 @@ public class LinkedList {
 		}
 		Node temp = this.head;
 		
+//		unique property of last node -> temp.next == null.
+
 		while(temp.next != null) {
 			temp = temp.next;
 		}
@@ -49,6 +51,10 @@ public class LinkedList {
 	
 	public void insertAt(int data, int index) {
 //		Linked list also follows 0 based indexing like an Array.
+		if(index < 0) {
+			return;
+		}
+		
 		if(index == 0) {
 			addFirst(data);
 			return;
@@ -66,7 +72,11 @@ public class LinkedList {
 	}
 
 	public void removeFirst() {
-		this.head = head.next;
+		
+		if(this.head == null) {
+			return;
+		}
+		this.head = this.head.next;
 //		after that previous node will not reachable although the connection is there
 //		and we know in LinkedList we can't move backwards -> the previous head exists but not reachable.
 //		And we know a concept,
@@ -75,6 +85,7 @@ public class LinkedList {
 	public void removeLast() {
 		Node temp = this.head;
 		
+//		unique property of second last node -> temp.next.next == null.
 		while(temp.next.next != null) {
 			temp = temp.next;
 		}
@@ -82,6 +93,27 @@ public class LinkedList {
 //		And we know a concept,
 //		if there is a node and if it is not reachable, then the garbage collector will automatically remove the unreachable node. 
 	
+	}
+	
+	public void removeAt(int index) {
+		
+		if(index < 0) {
+			return;
+		}
+		
+		if(index == 0) {
+			removeFirst();
+			return;
+		}
+		
+		Node temp = this.head;
+		for(int i = 0; i < index -1; i++) {
+			temp =  temp.next;
+		}
+		temp.next = temp.next.next;
+//		And we know a concept,
+//		if there is a node and if it is not reachable, then the garbage collector will automatically remove the unreachable node. 
+		
 	}
 }
 

@@ -25,6 +25,12 @@ public class LinkedListClient {
 		ll.display();
 		ll.removeLast();
 		ll.display();
+		ll.removeAt(2);
+		ll.display();
+		ll.removeAt(3);
+		ll.display();
+		ll.removeAt(0);
+		ll.display();
 		
 	}
 
