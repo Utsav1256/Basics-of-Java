@@ -64,6 +64,25 @@ public class LinkedList {
 		newNode.next = temp.next;
 		temp.next = newNode;
 	}
+
+	public void removeFirst() {
+		this.head = head.next;
+//		after that previous node will not reachable although the connection is there
+//		and we know in LinkedList we can't move backwards -> the previous head exists but not reachable.
+//		And we know a concept,
+//		if there is a node and if it is not reachable, then the garbage collector will automatically remove the unreachable node. 
+	}
+	public void removeLast() {
+		Node temp = this.head;
+		
+		while(temp.next.next != null) {
+			temp = temp.next;
+		}
+		temp.next = null;
+//		And we know a concept,
+//		if there is a node and if it is not reachable, then the garbage collector will automatically remove the unreachable node. 
+	
+	}
 }
 
 

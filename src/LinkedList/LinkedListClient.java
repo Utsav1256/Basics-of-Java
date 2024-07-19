@@ -21,6 +21,11 @@ public class LinkedListClient {
 		ll.display();
 		ll.insertAt(360, 7);
 		ll.display();
+		ll.removeFirst();
+		ll.display();
+		ll.removeLast();
+		ll.display();
+		
 	}
 
 }
