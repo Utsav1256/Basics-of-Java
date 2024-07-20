@@ -1,16 +1,16 @@
 package LinkedList;
 
 public class LinkedList {
-	class Node {
-		int data;
-		Node next;
-		
-		Node(int data) {
-			this.data = data;
-		}
-	}
+//	class Node {
+//		int data;
+//		Node next;
+//		
+//		Node(int data) {
+//			this.data = data;
+//		}
+//	}
 	
-	Node head;
+	public Node head;
 	
 	public void display() {
 		
