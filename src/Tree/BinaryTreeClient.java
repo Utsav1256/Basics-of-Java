@@ -22,6 +22,16 @@ public class BinaryTreeClient {
 		inorderTrapersal(root.right);
 	}
 	
+	static void postorderTraversal(Node root) {
+		if(root == null) {
+			return;
+		}
+		
+		postorderTraversal(root.left);
+		postorderTraversal(root.right);
+		System.out.print(root.data + " ");
+	}
+	
 	public static void main(String[] args) {
 		BinaryTree b = new BinaryTree();
 		
@@ -37,6 +47,9 @@ public class BinaryTreeClient {
 		System.out.println();
 		System.out.println("Inorder Traversal ;)");
 		inorderTrapersal(b.root);
+		System.out.println();
+		System.out.println("Postorder Traversal :]");
+		postorderTraversal(b.root);
 		System.out.println();
 		
 /* 
