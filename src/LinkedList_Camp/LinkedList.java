@@ -24,7 +24,15 @@ public class LinkedList {
 		System.out.println("Node n4" + ", address " + n4 + ", data" + n4.data + ", next " + n4.next);
 		System.out.println("Node n5" + ", address " + n5 + ", data" + n5.data + ", next " + n5.next);
 
-		
+		/*
+		 * 
+		 * Node n1, address LinkedList_Camp.Node@30dae81, data10, next LinkedList_Camp.Node@1b2c6ec2
+		   Node n2, address LinkedList_Camp.Node@1b2c6ec2, data20, next LinkedList_Camp.Node@4d405ef7
+		   Node n3, address LinkedList_Camp.Node@4d405ef7, data30, next LinkedList_Camp.Node@6193b845
+		   Node n4, address LinkedList_Camp.Node@6193b845, data40, next LinkedList_Camp.Node@2e817b38
+    	   Node n5, address LinkedList_Camp.Node@2e817b38, data50, next null
+		 * 
+		 */
 		return n1;
 	}
 	
