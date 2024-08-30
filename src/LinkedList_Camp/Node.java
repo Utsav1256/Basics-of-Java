@@ -8,4 +8,6 @@ public class Node<T> {
 		this.data =  data;
 //		this.next = null; -> no need to write this bcz default value of the Node type will be `null`
 	}
+	
+	
 }
