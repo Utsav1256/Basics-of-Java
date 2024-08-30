@@ -36,5 +36,13 @@ public class LinkedList {
 		return n1;
 	}
 	
-	
+	public void printLinkedList(Node<Integer> head) {
+
+		while(head != null) {
+			System.out.print(head.data + " ");
+			
+			head = head.next;
+		}
+		
+	}
 }
